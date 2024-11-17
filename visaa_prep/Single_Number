@@ -1,0 +1,11 @@
+def single_number(a):
+    l=[]
+    for n in a:
+        if n in l:
+            l.remove(n)
+        else:
+            l.append(n)
+    return l[0]
+n=int(input())
+a=list(map(int,input().split()))
+print(single_number(a))
